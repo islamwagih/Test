@@ -18,7 +18,7 @@ int getMin(vector<int> nums)
         if(nums[i] < nums[minIdx]) minIdx = i;
     }
     return nums[minIdx];
-
+}
 int getAverage(vector<int> vec)
 {
   int sum = getSum(vec);
