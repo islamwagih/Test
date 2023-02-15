@@ -9,6 +9,7 @@ int getSum(vector<int> nums)
   return sum;
 }
 
+
 int getMin(vector<int> nums)
 {
     int minIdx = 0;
@@ -17,6 +18,12 @@ int getMin(vector<int> nums)
         if(nums[i] < nums[minIdx]) minIdx = i;
     }
     return nums[minIdx];
+
+int getAverage(vector<int> vec)
+{
+  int sum = getSum(vec);
+  return sum/vec.size();
+
 }
 
 int main()
@@ -24,5 +31,6 @@ int main()
   vector<int> vec{4,5,1,2,3,-1,5,0,2,1};
   cout<<getSum(vec)<<endl;
   cout<<getMin(vec)<<endl;
+  cout<<getAverage(vec)<<endl;
   return 0;
 }
